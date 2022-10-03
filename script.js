@@ -7,8 +7,8 @@ updateCountdown = () => {
             .toString()
             .split(".")[0];
 
-    document.getElementsByTagName("title")[0].innerHTML = daysLeftUntilRelease + " days left";
-    document.getElementById("daysCount").innerHTML = daysLeftUntilRelease + " DAYS";
+    document.getElementsByTagName("title")[0].innerHTML = +daysLeftUntilRelease + 1 + " days left";
+    document.getElementById("daysCount").innerHTML = +daysLeftUntilRelease + 1 + " DAYS";
 }
 
 init = () => {
